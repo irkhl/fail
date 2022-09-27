@@ -1,0 +1,51 @@
+body {
+  color: #2f80ed;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.img{
+  margin: 110px 380px 10px;
+}
+
+.main{
+  margin: 0 430px 280px;
+  text-align: center;
+  width: 420px;
+  height: 140px;
+}
+.fail{
+  margin: 0 auto;
+  font-size: 100px;      
+}
+
+[data-tooltip] {
+  position: relative; /* Относительное позиционирование */ 
+ }
+ [data-tooltip]::after {
+  content: attr(data-tooltip); /* Выводим текст */
+  position: absolute; /* Абсолютное позиционирование */
+  width: 420px; /* Ширина подсказки */
+  left: 0; top: 0; /* Положение подсказки */
+  font-size: 15px;
+ 
+  opacity: 0; /* Подсказка невидима */
+  transition: 0s; /* Время появления подсказки */
+ 
+} 
+ [data-tooltip]:hover::after {
+  opacity: 1; /* Показываем подсказку */
+  top: 130px; /* Положение подсказки */
+ }
+
+.footer{
+  margin: 0 430px 30px;
+  width: 420px;
+  text-align: center;
+}
+.text{
+  font-size: 18px;
+}
+
+.underline{
+  text-decoration: underline;
+}
